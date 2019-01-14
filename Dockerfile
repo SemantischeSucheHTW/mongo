@@ -4,7 +4,7 @@ COPY create-user-rawpagewriter.js /docker-entrypoint-initdb.d/create-user-rawpag
 COPY create-user-genericparser.js /docker-entrypoint-initdb.d/create-user-genericparser.js
 COPY create-user-downloader.js /docker-entrypoint-initdb.d/create-user-downloader.js
 COPY create-user-spellchecker_suggester.js /docker-entrypoint-initdb.d/create-user-spellchecker_suggester.js
-COPY create-user-spellchecker_words_by_length_updater.js /docker-entrypoint-initdb.d/create-user-spellchecker_words_by_length_updater.js
+COPY create-user-words_by_length_updater.js /docker-entrypoint-initdb.d/create-user-words_by_length_updater.js
 
 COPY converted_rawpages.zip /converted_rawpages.zip
 COPY import_rawpages.sh /docker-entrypoint-initdb.d/import_rawpages.sh
